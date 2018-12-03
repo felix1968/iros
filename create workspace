@@ -1,0 +1,7 @@
+mkdir -p ~/catkin_ws/src
+cd ~/caktin_ws/src
+catkin_init_workspace
+cd ~/catkin_ws
+catkin_make
+echo "export ROS_PACKAGE_PATH=~/catkin_ws/src:$ROS_PACKAGE_PATH" >> ~/.bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
